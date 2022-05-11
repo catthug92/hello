@@ -33,6 +33,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Start">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6U-2H-jOF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,10 +47,14 @@
                             <constraint firstItem="5xY-Tl-8iv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="dH3-OW-xIW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloworldlabel" destination="5xY-Tl-8iv" id="yJx-7h-SDe"/>
+                        <outlet property="toggleButton" destination="RMb-K9-obU" id="DGC-BA-5al"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+            <point key="canvasLocation" x="36" y="31"/>
         </scene>
     </scenes>
     <resources>

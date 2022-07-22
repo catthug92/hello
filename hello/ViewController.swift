@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func makeButtonAction() {
-        // пишем логику для кнопки
+        // пишем логику для кнопкиv er
         if helloworldlabel2.isHidden {
             helloworldlabel2.isHidden = false
             //меняем текст кнопки

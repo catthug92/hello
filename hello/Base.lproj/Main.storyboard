@@ -22,33 +22,66 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMb-K9-obU">
-                                <rect key="frame" x="132" y="747" width="150" height="32"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="tyx-Lp-AJs"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Start">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6U-2H-jOF"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="986-Jy-jDO">
+                                <rect key="frame" x="132" y="611" width="150" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U3-Gs-e9Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="32"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="N7M-zE-QA2"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Start">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tks-3b-Ojw"/>
+                                            <action selector="myNewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIm-9D-70W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDH-fJ-gnh">
+                                        <rect key="frame" x="0.0" y="68" width="150" height="32"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Start">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIo-ww-PgK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMb-K9-obU">
+                                        <rect key="frame" x="0.0" y="136" width="150" height="32"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="tyx-Lp-AJs"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Start">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6U-2H-jOF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RMb-K9-obU" secondAttribute="bottom" constant="83" id="8rL-l9-O1a"/>
-                            <constraint firstItem="RMb-K9-obU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Th6-BU-wsV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="986-Jy-jDO" secondAttribute="bottom" constant="83" id="TgM-8O-HJv"/>
                             <constraint firstItem="5xY-Tl-8iv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VgT-A0-Y46"/>
                             <constraint firstItem="5xY-Tl-8iv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="dH3-OW-xIW"/>
+                            <constraint firstItem="986-Jy-jDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3m-Et-vfm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="helloworldlabel" destination="5xY-Tl-8iv" id="yJx-7h-SDe"/>
+                        <outlet property="helloworldlabel2" destination="5xY-Tl-8iv" id="iVK-FP-g17"/>
                         <outlet property="toggleButton" destination="RMb-K9-obU" id="DGC-BA-5al"/>
                     </connections>
                 </viewController>

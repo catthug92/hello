@@ -8,28 +8,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var helloworldlabel: UILabel!
+    @IBOutlet var helloworldlabel2: UILabel!
     @IBOutlet var toggleButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // по умолчанию скрыли надпись
-        helloworldlabel.isHidden = true
+        helloworldlabel2.isHidden = true
         // закруглили кнопку
         toggleButton.layer.cornerRadius = 10
     }
 
     @IBAction func makeButtonAction() {
         // пишем логику для кнопки
-        if helloworldlabel.isHidden {
-            helloworldlabel.isHidden = false
+        if helloworldlabel2.isHidden {
+            helloworldlabel2.isHidden = false
             //меняем текст кнопки
             toggleButton.setTitle("Hide text", for: .normal)
         } else {
-            helloworldlabel.isHidden = true
+            helloworldlabel2.isHidden = true
             toggleButton.setTitle("Show text", for: .normal)
         }
     }
-    
+
 }
 
